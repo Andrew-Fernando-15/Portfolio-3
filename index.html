@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Samurai Lock</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="background"></div>
+  <div id="petal-container"></div>
+  <div id="darkLayer"></div>
+
+  <!-- 🔥 CLOCK (OUTSIDE UI - ALWAYS VISIBLE) -->
+  <div class="clockBox">
+    <h1 id="day">SUNDAY</h1><br>
+    <p id="date">10 MARCH, 2024</p>
+    <p id="time">9:56 AM</p>
+  </div>
+
+  <div id="ui">
+
+    <!-- LOGO SCREEN -->
+    <div id="logoScreen">
+      <img id="logo" src="images/User-0.png" alt="Samurai Logo">
+      <p class="tap-hint">ANDREW FERNANDO</p>
+    </div>
+
+    <!-- PASSWORD AREA -->
+    <div id="passwordArea" style="display: none; margin-top: 10px;">
+      <div class="group">
+        <input id="passwordInput" class="input" type="password" placeholder="Password">
+      </div>
+      <div id="message" style="margin-top: 5px;"></div>
+      <div style="margin-top: 5px;">
+        <button id="Btn" class="action-btn">Enter</button>
+        <button id="Btn" class="action-btn">Back</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
