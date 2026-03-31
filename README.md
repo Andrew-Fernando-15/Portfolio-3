@@ -1,7 +1,7 @@
 # Andrew OS – Web Desktop Environment
 
-![Portfolio Screenshot](lockscreen.png)
-![Portfolio Screenshot](homescreen.png)
+![Portfolio Screenshot](images/lockscreen.png)
+![Portfolio Screenshot](images/homescreen.png)
 
 A modern **web-based desktop environment** that runs directly in the browser.
 Samurai OS recreates the feel of a real operating system with a lockscreen, taskbar, desktop icons, and interactive windows.
