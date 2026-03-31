@@ -510,10 +510,10 @@ dragging=false;
 
 const wallpapers = [
 "images/img-1.jpg",
+"images/img-2.jpg",
 "images/img-3.jpg",
 "images/img-4.jpg",
-"images/img-8.jpg",
-"images/img-9.jpg"
+"images/img-5.jpg"
 ];
 
 let wallpaperIndex = 0;
