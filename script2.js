@@ -1052,7 +1052,7 @@ if (aboutWindow) {
 // =============================
 
 const gameIcons = {
-  "tetris-window":  "icons/tetris.jfif",
+  "tetris-window":  "icons/Tetris.jfif",
   "snake-window":   "icons/snake.jpg",
   "connect4-window":"icons/connect4.jfif"
 };
