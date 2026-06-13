@@ -1046,3 +1046,43 @@ if (aboutWindow) {
   const maxBtn = aboutWindow.querySelector(".max-btn");
   if (maxBtn) maxBtn.style.display = "none";
 }
+
+// =============================
+// GAMES
+// =============================
+
+const gameIcons = {
+  "tetris-window":  "icons/tetris.jfif",
+  "snake-window":   "icons/snake.jpg",
+  "connect4-window":"icons/connect4.jfif"
+};
+
+function openGameWindow(windowId) {
+  const win = document.getElementById(windowId);
+  if (!win) return;
+  win.classList.remove("hidden");
+  applyWindowType(win, "app");
+  focusWindow(win);
+
+  if (!document.querySelector(`[data-task="${windowId}"]`)) {
+    const app = document.createElement("img");
+    app.src = gameIcons[windowId];
+    app.className = "taskbar-app active";
+    app.dataset.task = windowId;
+
+    app.onclick = () => {
+      if (win.classList.contains("hidden")) {
+        win.classList.remove("hidden");
+        focusWindow(win);
+      } else {
+        win.classList.add("hidden");
+      }
+    };
+
+    taskbarApps.appendChild(app);
+  }
+}
+
+document.getElementById("launch-tetris")?.addEventListener("click", () => openGameWindow("tetris-window"));
+document.getElementById("launch-snake")?.addEventListener("click", () => openGameWindow("snake-window"));
+document.getElementById("launch-connect4")?.addEventListener("click", () => openGameWindow("connect4-window"));
