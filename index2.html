@@ -540,6 +540,100 @@ Click anywhere on the canvas to grow a new flower, and use the “clean the scre
 </div>
 
 
+<!-- GAMES WINDOW -->
+<div class="window hidden window-app" id="games-window">
+    <div class="window-header">
+        <div class="window-controls">
+            <button class="close-btn close"></button>
+            <button class="min-btn minimize"></button>
+            <button class="max-btn maximize"></button>
+        </div>
+        <span>Games</span>
+    </div>
+    <div class="window-body portfolio-body">
+        <div class="portfolio-grid">
+
+            <div class="project-card" id="launch-tetris">
+                <div class="project-preview">
+                    <img src="images/tetris.jfif" class="project-image">
+                </div>
+                <div class="project-brief">
+                    <h3 class="project-title">Tetris</h3>
+                    <p class="project-description">Classic block stacking puzzle game. Stack and clear lines to score!</p>
+                </div>
+            </div>
+
+            <div class="project-card" id="launch-snake">
+                <div class="project-preview">
+                    <img src="images/snake.jfif" class="project-image">
+                </div>
+                <div class="project-brief">
+                    <h3 class="project-title">Snake</h3>
+                    <p class="project-description">Guide the snake, eat the food, don't hit the walls!</p>
+                </div>
+            </div>
+
+            <div class="project-card" id="launch-connect4">
+                <div class="project-preview">
+                    <img src="images/connect4.jfif" class="project-image">
+                </div>
+                <div class="project-brief">
+                    <h3 class="project-title">Connect 4</h3>
+                    <p class="project-description">Drop your discs, connect four in a row to win!</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- TETRIS WINDOW -->
+<div class="window hidden window-app" id="tetris-window">
+    <div class="window-header">
+        <div class="window-controls">
+            <button class="close-btn close"></button>
+            <button class="min-btn minimize"></button>
+            <button class="max-btn maximize"></button>
+        </div>
+        <span>Tetris</span>
+    </div>
+    <div class="window-body game-body">
+        <iframe src="https://andrew-fernando-15.github.io/projects/tetris-game/index.html" class="game-iframe"></iframe>
+    </div>
+</div>
+
+<!-- SNAKE WINDOW -->
+<div class="window hidden window-app" id="snake-window">
+    <div class="window-header">
+        <div class="window-controls">
+            <button class="close-btn close"></button>
+            <button class="min-btn minimize"></button>
+            <button class="max-btn maximize"></button>
+        </div>
+        <span>Snake</span>
+    </div>
+    <div class="window-body game-body">
+        <iframe src="https://andrew-fernando-15.github.io/projects/snake-game/index.html" class="game-iframe"></iframe>
+    </div>
+</div>
+
+<!-- CONNECT4 WINDOW -->
+<div class="window hidden window-app" id="connect4-window">
+    <div class="window-header">
+        <div class="window-controls">
+            <button class="close-btn close"></button>
+            <button class="min-btn minimize"></button>
+            <button class="max-btn maximize"></button>
+        </div>
+        <span>Connect 4</span>
+    </div>
+    <div class="window-body game-body">
+        <iframe src="https://andrew-fernando-15.github.io/projects/connect4-game/index.html" class="game-iframe"></iframe>
+    </div>
+</div>
+
+
+
 <!-- TASKBAR -->
 
 <div class="taskbar">
@@ -621,6 +715,11 @@ Click anywhere on the canvas to grow a new flower, and use the “clean the scre
         <button class="icon" data-window="explorer-window" data-type="app">
             <img src="icons/File.png">
             <span>Files</span>
+        </button>
+
+        <button class="icon" data-window="games-window" data-type="app">
+            <img src="icons/game.png">
+            <span>Games</span>
         </button>
 
     </div>
